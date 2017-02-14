@@ -1,6 +1,7 @@
 <template>
 <div class="pagenation">
 	<ul>
+		<p class="info">One：seven number show each time</p>
 		<li @click="pre"> < </li>
 		<li v-for="item in show_page_numbers" :class="{active: item==current_index}" @click="setIndex(item)">{{item}}</li>
 		<li @click="next"> > </li>
@@ -23,7 +24,7 @@ export default{
 		}
 	},
 	mounted(){
-	console.log(222)
+	console.log("page")
 		this.refreshPage();
 	},
 	methods:{
@@ -61,9 +62,9 @@ export default{
 </script>
 <style scoped>
 .pagenation{
-	text-align:center;
+	text-align:left;
 }
-  li{
+ li{
     list-style: none;
     display: inline-block;
     margin: 5px 0;
@@ -74,6 +75,13 @@ export default{
     cursor: pointer;
     transition: all 0.05s;
     user-select: none;  
+    text-align:center;
+  }
+  .info{
+    display:inline-block;
+  	color: #ed6c63;
+    font-size: 12px;
+    font-weight: 400;
   }
   .active{
   	background-color: rgba(65, 182, 131, .5);
