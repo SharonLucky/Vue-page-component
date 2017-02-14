@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <pagenation :current="1" :total="40" :currentChange="whenChange"></pagenation>
+    <pagenationInput :current="1" :total="40" :currentChange="whenChange"></pagenationInput>
   </div>
 </template>
 <script>
