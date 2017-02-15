@@ -24,7 +24,7 @@ export default{
 		}
 	},
 	mounted(){
-	  console.log("page")
+	console.log("page")
 		this.refreshPage();
 	},
 	methods:{

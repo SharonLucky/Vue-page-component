@@ -2,7 +2,8 @@
   <div id="app">
     <pagenation :current="1" :total="40" :currentChange="whenChange"></pagenation>
     <pagenationInput :current="1" :total="30"></pagenationInput>
-    <pagenationLimit :current="1" :total="30"></pagenationLimit>
+    <pagenationLimit :current="1" :total="20"></pagenationLimit>
+    <pagenationLimitInput :current="1" :total="20"></pagenationLimitInput>
   </div>
 </template>
 <script>
